@@ -27,7 +27,8 @@ time, mark, audio, video {
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
-	display: block;
+	display: inline-block;
+    width: 100%;
 }
 body {
 	line-height: 1;
@@ -80,19 +81,22 @@ p {
 /* Navigation */
 
 .nav {
-	margin: 20px 0;
+	margin: 20px 0 0;
 	background: #006fba;
+	text-align: center;
 }
 .nav_item {
 	display: inline-block;
 	padding: 20px 10px;
 	text-align: center;
+	width: 25%;
+    margin-right: -4px;
 }
 
 /* Content */
 
 .content {
-	margin: 20px 0;
+	margin: 20px 0 0;
 }
 .panel {
 	width: 49%;
@@ -113,9 +117,9 @@ p {
     width: 32%;
     float: left;
     display: inline-block;
-    padding: 20px;
-    vertical-align: top;
-    margin-top: 20px;
+	padding: 20px;
+	vertical-align: top;
+	margin-top: 20px;
     min-height: 400px;
 }
 
@@ -128,6 +132,13 @@ p {
 }
 
 .entry .date {
+	font-style: italic;
+}
+
+/* Footer */
+
+.footer__text {
+	font-size: 14px;
 	font-style: italic;
 }
 

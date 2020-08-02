@@ -30,27 +30,27 @@
                 <p>Praesent felis metus, pharetra id egestas maximus, pretium non purus. Donec et mauris ut tellus porta ultricies. Vestibulum eros elit, tempor non pellentesque et, varius eu ante. Vivamus suscipit dolor sapien, eu consequat magna posuere vel. Duis eu velit sit amet eros feugiat varius id nec purus.
             </article>
             <article class="panel">
-                <h2>Right Pane Title
+                <h2>Right Pane Title</h2>
                 <p>Praesent felis metus, pharetra id egestas maximus, pretium non purus. Donec et mauris ut tellus porta ultricies. Vestibulum eros elit, tempor non pellentesque et, varius eu ante. Vivamus suscipit dolor sapien, eu consequat magna posuere vel. Duis eu velit sit amet eros feugiat varius id nec purus.</p>
             </article>
         </section>
         <section class="news"></section>
         <footer class="footer">
-            <P>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi congue ipsum a ligula tincidunt interdum. Proin ut nibh viverra lectus pretium pellentesque iaculis rhoncus tellus. Praesent eget nunc ipsum. Praesent diam velit, blandit vitae tincidunt sit amet, ullamcorper sit amet felis. Proin sodales elit sed orci lacinia, ut pretium elit mattis. Sed ut efficitur purus. Cras consequat ex leo, placerat aliquet ante consequat non.</P>
+            <p class="footer__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi congue ipsum a ligula tincidunt interdum. Proin ut nibh viverra lectus pretium pellentesque iaculis rhoncus tellus. Praesent eget nunc ipsum. Praesent diam velit, blandit vitae tincidunt sit amet, ullamcorper sit amet felis. Proin sodales elit sed orci lacinia, ut pretium elit mattis. Sed ut efficitur purus. Cras consequat ex leo, placerat aliquet ante consequat non.</p>
         </footer>
     </main>
     <script id="release-template" type="text/x-handlebars-template">
         {{#each releases}}
             <div class="entry">
                 <div class="thumb">
-                    <img src="{{thumb}}"></img>
+                    <img src="{{thumb}}">
                 </div>
                 <div class="content"><h2>{{headline}}</h2>
                     <div class="date">
-                        {{formatDate date "MMMM DD, YYYY"}}
+                        {{formatDate date "DD/MM/YY hh:mm:ss a"}}
                     </div>
                     <div class="body">
-                        <p>{{body}}</p>
+                        <p>{{truncate body 120}}</p>
                     </div>
                 </div>
             </div>
